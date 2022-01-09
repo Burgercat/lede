@@ -1,0 +1,68 @@
+msgid "Processor"
+msgstr "Processor"
+
+msgid "Architecture"
+msgstr "Architecture"
+
+msgid "CPU Temperature"
+msgstr "CPU Temperature"
+
+msgid "CPU Info"
+msgstr "CPU Info"
+
+msgid "CPU Model"
+msgstr "CPU Model"
+
+msgid "CPU frequency"
+msgstr "CPU frequency"
+
+msgid "RAM frequency"
+msgstr "RAM frequency"
+
+msgid "Flash Size"
+msgstr "Flash Size"
+
+msgid "Free Memory"
+msgstr "Free Memory"
+
+msgid "RUNNING"
+msgstr "RUNNING"
+
+msgid "NOT RUNNING"
+msgstr "NOT RUNNING"
+
+msgid "ZRam Settings"
+msgstr "ZRam Settings"
+
+msgid "ZRam Compression Algorithm"
+msgstr "ZRam Compression Algorithm"
+
+msgid "ZRam Compression Streams"
+msgstr "ZRam Compression Streams"
+
+msgid "ZRam Size"
+msgstr "ZRam 大小"
+
+msgid "Size of the ZRam device in megabytes"
+msgstr "Size of the ZRam device in megabytes"
+
+msgid "Number of parallel threads used for compression"
+msgstr "Number of parallel threads used for compression"
+
+msgid "Swap"
+msgstr "Swap"
+
+msgid "Force 40MHz mode"
+msgstr "Force 40MHz mode"
+
+msgid ""
+"Always use 40MHz channels even if the secondary channel overlaps. Using this "
+"option does not comply with IEEE 802.11n-2009!"
+msgstr "Always use 40MHz channels even if the secondary channel overlaps. Using this "
+"option does not comply with IEEE 802.11n-2009!"
+
+msgid "Disassociate On Low Acknowledgement"
+msgstr "Disassociate on low acknowledgement"
+
+msgid "Allow AP mode to disconnect STAs based on low ACK condition"
+msgstr "Allow AP mode to disconnect STAs based on low ACK condition"
