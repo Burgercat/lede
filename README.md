@@ -3,13 +3,15 @@ Welcome to Lean's git source of OpenWrt and packages
 
 How to build your Openwrt firmware.
 -
-Note:
+Notes
 --
 1. DO **NOT** USE **root** USER FOR COMPILING!!!
 
 2. Users within China should prepare proxy before building.
 
 3. Web admin panel default IP is 192.168.1.1 and default password is "password".
+
+4. This fork is customized to have English as the default language and customized time settings for Philippine users. 
 
 Let's start!
 ---
@@ -20,7 +22,7 @@ Let's start!
     sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch python3 python2.7 unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf wget curl swig rsync
     `
 
-3. Run `git clone https://github.com/coolsnowwolf/lede` to clone the source code, and then `cd lede` to enter the directory
+3. Run `git clone https://github.com/Burgercat/lede` to clone the source code, and then `cd lede` to enter the directory
 
 4. ```bash
    ./scripts/feeds update -a
@@ -47,14 +49,14 @@ make -j8 download
 make -j$(($(nproc) + 1)) V=s
 ```
 
-If reconfiguration is need:
+If reconfiguration is needed:
 ```bash
 rm -rf ./tmp && rm -rf .config
 make menuconfig
 make -j$(($(nproc) + 1)) V=s
 ```
 
-Build result will be produced to `bin/targets` directory.
+The build result will be located in `bin/targets`.
 
 Special tips:
 ------
@@ -63,13 +65,6 @@ Special tips:
 2. If you have any technical problem, you may join the QQ discussion group: 297253733, link: click [here](https://jq.qq.com/?_wv=1027&k=5yCRuXL)
 
 3. Want to learn OpenWrt development but don't know how? Can't motivate yourself for self-learning? Not enough fundamental knowledge? Learn OpenWrt development with Mr. Zuo through his Beginner OpenWrt Training Course. Click [here](http://forgotfun.org/2018/04/openwrt-training-2018.html) to register.
-
-## Router Recommendation
-Not Sponsored: If you are finding a low power consumption, small and performance promising x86/x64 router, I personally recommend the 
-EZPROv1 Alumium Edition (N3710 4000M): [Details](https://item.taobao.com/item.htm?spm=a230r.1.14.20.144c763fRkK0VZ&id=561126544764)
-
-![xm1](doc/xm5.jpg)
-![xm2](doc/xm6.jpg)
 
 ## Donation
 
