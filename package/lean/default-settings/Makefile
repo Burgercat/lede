@@ -19,7 +19,7 @@ define Package/default-settings
   CATEGORY:=LuCI
   TITLE:=LuCI support for customized settings for Lean
   PKGARCH:=all
-  DEPENDS:=+luci-base +luci +@LUCI_LANG_en-us
+  DEPENDS:=+luci-base +luci +@LUCI_LANG_en
 endef
 
 define Package/default-settings/description
@@ -33,7 +33,7 @@ define Package/default-settings/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
 	$(INSTALL_BIN) ./files/zzz-default-settings $(1)/etc/uci-defaults/99-default-settings
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
-	po2lmo ./po/en-us/default.po $(1)/usr/lib/lua/luci/i18n/default.en-us.lmo
+	po2lmo ./po/en-us/default.po $(1)/usr/lib/lua/luci/i18n/default.en.lmo
 endef
 
 $(eval $(call BuildPackage,default-settings))
