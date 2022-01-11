@@ -1,9 +1,9 @@
 #!/bin/sh
 
-uci set luci.main.lang=en_us
+uci set luci.main.lang=en
 uci commit luci
 
-uci set system.@system[0].timezone=UTC+8
+uci set system.@system[0].timezone=PST-8
 uci set system.@system[0].zonename=Asia/Manila
 uci commit system
 
