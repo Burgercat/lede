@@ -33,7 +33,7 @@ define Package/default-settings/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
 	$(INSTALL_BIN) ./files/zzz-default-settings $(1)/etc/uci-defaults/99-default-settings
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
-	po2lmo ./po/en-us/default.po $(1)/usr/lib/lua/luci/i18n/default.en.lmo
+	po2lmo ./po/en/default.po $(1)/usr/lib/lua/luci/i18n/default.en.lmo
 endef
 
 $(eval $(call BuildPackage,default-settings))
